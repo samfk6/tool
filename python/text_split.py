@@ -1,5 +1,5 @@
 import os
-DATA_DIR = "789/"
+DATA_DIR = "file/"
 file_data = []
 for filename in os.listdir(DATA_DIR):
     print "Loading: %s" % filename
