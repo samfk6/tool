@@ -4,10 +4,7 @@ file_data = []
 for filename in os.listdir(DATA_DIR):
     print "Loading: %s" % filename
     loadFile = open(os.path.join(DATA_DIR, filename), 'r')
-    #loadFile.seek(17,0)
     a = loadFile.read()
-    #print a
-    #print "----"
     count = 0
     for b in a.split('\r\n'):
 #	print b
@@ -16,8 +13,4 @@ for filename in os.listdir(DATA_DIR):
 	count=count+1
 
     loadFile.close()
-
-    #loadFile = open(os.path.join(DATA_DIR, filename), 'w')
-    #loadFile.write(a)
-    #loadFile.close()
 
